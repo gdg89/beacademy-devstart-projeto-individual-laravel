@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WorkoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,6 @@ Route::get('/', function () {
 // User profile
 Route::get('/user',[UserController::class, 'index'])->name('user.index');
 
+//Rotina
+Route::get('/novo-treino',[WorkoutController::class, 'create'])->name('workout.create');
 
