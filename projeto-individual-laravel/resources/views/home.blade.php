@@ -8,6 +8,7 @@
             <!--Carousel -->
             <section class ="w-50">
                 <div  class="carousel slide " data-bs-ride="carousel">
+                    <p><q class="fs-6 mb-3">O que não é definido não pode ser medido, o que não é medido não pode ser melhorado. </q>L.K</p>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                         <img src="https://www.cambiatufisico.com/wp-content/uploads/entrenamiento-pecho-747x420.jpg.webp" class="d-block w-100" alt="...">
@@ -25,6 +26,7 @@
                 </div>
                 <h1 class="fs-2 mb-3 text-center mt-3">Defina seu treino, meça seu progresso, melhore seus resultados.</h1>
             </section>
+            @if(!Auth::user())
             <!-- Register Form -->
             <section  class="border border-secondary p-3">
                 <h2 class="fs-5">Crie sua conta</h2>
@@ -50,6 +52,7 @@
                      <button type="submit" class="btn btn-warning">Cadastrar</button>
                 
                 </form>
+            @endif
             </section>
         </div>
     </main>

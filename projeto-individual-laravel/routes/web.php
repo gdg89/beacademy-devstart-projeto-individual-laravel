@@ -24,6 +24,7 @@ Route::get('/', function () {
 // User profile
 Route::get('/user',[UserController::class, 'index'])->name('user.index');
 
-//Rotina
-Route::get('/novo-treino',[WorkoutController::class, 'create'])->name('workout.create');
-
+//workout
+Route::get('/workout',[WorkoutController::class, 'create'])->name('workout.create');
+Route::post('/workout/add-exercise',[WorkoutController::class, 'add'])->name('workout.add');
+Route::post('/workout/store',[WorkoutController::class, 'store'])->name('workout.store');

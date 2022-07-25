@@ -16,8 +16,6 @@
                     <nav class="navbar navbar-expand-lg text-white px-3">
                         <div class="container-fluid">
                         <a class="navbar-brand fs-5 font-weight-bold  text-white " href="/">Home</a> 
-                            <p class="fs-6 mb-3">"O que não é definido não pode ser medido, o que não é medido não pode ser melhorado."</p>
-
                             <ul class="navbar-nav mr-auto">
                                 @if(Auth::user())
                                     <li class="nav-item ">
